@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /home/pi/recordplayer
+source .venv/bin/activate
+python pi/main.py

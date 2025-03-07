@@ -1,0 +1,70 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CP :: Copy",
+            "detail": "Copy python files to the board",
+            "type": "shell",
+            "command": "rsync -ruv board/*.py /Volumes/CIRCUITPY ",
+            "problemMatcher": [],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "CP :: Terminal",
+            "detail": "Connect to the terminal",
+            "type": "shell",
+            "command": "screen /dev/tty.usbmodem* 115200",
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "CP :: Unmount",
+            "detail": "Connect to the terminal",
+            "type": "shell",
+            "command": "osascript -e 'tell application \"Finder\" to eject (every disk whose ejectable is true)'",
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "PI :: Terminal",
+            "detail": "Connect to the terminal",
+            "type": "shell",
+            "command": "ssh pi@recordplayer",
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "PI :: Copy",
+            "detail": "Copy python files to the Raspberry Pi",
+            "type": "shell",
+            "command": "rsync -r -avu --delete --force --perms --chmod=a+rwx --exclude=.venv . pi@recordplayer:~/recordplayer ",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}
