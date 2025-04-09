@@ -8,4 +8,5 @@ This is [Owntone](https://owntone.github.io/owntone-server/) media server in ret
 
 [How to build](docs/instruction.md)
 [YouTube](https://www.youtube.com/watch?v=qOQR8iDCI8Y)
+[MakerWorld](https://makerworld.com/en/models/1300993-record-player)
 [OnShape](https://cad.onshape.com/documents/8d49c69d5558d4a3c2d04c2c/w/57560bbfb3612a29b81fb9af/e/d4a23e81e34f632615be4a04)
