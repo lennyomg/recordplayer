@@ -24,6 +24,8 @@ enable_uart=1
 ![](assets/audio1.jpeg)
 ![](assets/audio2.jpeg)
 
+The Pi Model 3 A+ has a 3.5mm headphone jack, but it is no good. Audio I2S HAT is the way to go. I've got [Adafruit I2S 3W Stereo Speaker Bonnet](https://www.adafruit.com/product/3346). This [guide](https://learn.adafruit.com/adafruit-speaker-bonnet-for-raspberry-pi) should work for all I2S HATs.
+
 As for speakers - any 3W or 5W will do. I salvaged mine from an [Amazon Basic Speaker](https://www.amazon.com/dp/B07D7TV5J3), which I had from one of my previous projects. Sound quality is... good enough. Glue the speakers into the side walls with a hot glue gun.
 
 ### Motor
